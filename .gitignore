@@ -1,5 +1,8 @@
 # Ignore includes
 include/**
 
+# Don't ignore a_*.inc files
+!include/a_*.inc
+
 # Don't ignore instructions
 !include/README.md
