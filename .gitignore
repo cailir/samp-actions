@@ -1,6 +1,8 @@
 # Ignore includes
 include/**
 
+# Don't ignore core.inc file
+!include/core.inc
 # Don't ignore a_*.inc files
 !include/a_*.inc
 
