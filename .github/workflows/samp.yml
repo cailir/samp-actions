@@ -27,7 +27,7 @@ jobs:
       - name: Compile gamemode.pwn
         run: |
           chmod 766 ./pawno/pawncc
-          LD_LIBRARY_PATH=$LD_LIBRARY_PATH:pawno ./pawno/pawncc ./gamemodes/gamemode.pwn -Dgamemodes/ -iinclude/ -Z
+          LD_LIBRARY_PATH=$LD_LIBRARY_PATH:pawno ./pawno/pawncc gamemode.pwn -Dgamemodes/ -iinclude/ -Z
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
