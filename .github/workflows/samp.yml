@@ -28,3 +28,9 @@ jobs:
         run: |
           chmod 766 ./pawno/pawncc
           ./pawno/pawncc ./gamemodes/gamemode.pwn -D ./gamemodes/ -i ./include/ -Z
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: gamemode.amx
+          path: |
+            gamemodes/gamemode.amx
